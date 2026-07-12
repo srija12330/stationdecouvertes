@@ -279,4 +279,23 @@ h1 {
   margin-bottom: 0;
   font-weight: 500;
 }
+  .section-en-savoir-plus {
+  padding: 80px 10%;
+  background-color: #f8f3ec;
 }
+
+.texte-en-savoir-plus {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.texte-en-savoir-plus h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.texte-en-savoir-plus p {
+  margin-bottom: 18px;
+  line-height: 1.8;
+}
+
