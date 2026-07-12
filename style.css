@@ -1,264 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Georgia", serif;
-  background: #f7f3ec;
-  color: #1f1f1f;
-}
-
-.header {
-  height: 80px;
-  padding: 0 48px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #f7f3ec;
-  border-bottom: 1px solid #e4ded3;
-}
-
-.logo {
-  font-size: 18px;
-  letter-spacing: 2px;
-  line-height: 1.1;
-  text-transform: uppercase;
-}
-
-.nav {
-  display: flex;
-  gap: 24px;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-}
-
-.nav a {
-  color: #1f1f1f;
-  text-decoration: none;
-}
-
-.hero {
-  min-height: 650px;
-  display: flex;
-  align-items: center;
-  padding: 80px 48px;
-  background:
-    linear-gradient(to right, rgba(247,243,236,0.98) 0%, rgba(247,243,236,0.85) 38%, rgba(247,243,236,0.15) 70%),
-    url("https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1800&q=80");
-  background-size: cover;
-  background-position: center;
-}
-
-.hero-text {
-  max-width: 620px;
-}
-
-.label {
-  font-family: Arial, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 13px;
-  margin-bottom: 18px;
-}
-
-h1 {
-  font-size: 82px;
-  line-height: 0.95;
-  font-weight: 400;
-  margin-bottom: 28px;
-  text-transform: uppercase;
-}
-
-.intro {
-  font-family: Arial, sans-serif;
-  font-size: 18px;
-  line-height: 1.7;
-  max-width: 520px;
-  margin-bottom: 32px;
-}
-
-.buttons {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.btn {
-  display: inline-block;
-  padding: 16px 28px;
-  font-family: Arial, sans-serif;
-  font-size: 13px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.btn.dark {
-  background: #1f1f1f;
-  color: white;
-}
-
-.btn.light {
-  background: #f7f3ec;
-  color: #1f1f1f;
-  border: 1px solid #1f1f1f;
-}
-
-.icons {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  padding: 48px;
-  background: #fffaf3;
-  text-align: center;
-  border-bottom: 1px solid #e4ded3;
-}
-
-.icons h3 {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-}
-
-.icons p {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-.about {
-  display: grid;
-  grid-template-columns: 1fr 1.4fr;
-  gap: 48px;
-  padding: 80px 48px;
-  align-items: center;
-}
-
-.about h2 {
-  font-size: 54px;
-  font-weight: 400;
-  line-height: 1.1;
-  margin-bottom: 24px;
-}
-
-.about p {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.7;
-  margin-bottom: 24px;
-}
-
-.text-link {
-  font-family: Arial, sans-serif;
-  color: #1f1f1f;
-  text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 1px;
-}
-
-.about-image {
-  min-height: 360px;
-  background: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80");
-  background-size: cover;
-  background-position: center;
-}
-
-.destinations {
-  padding: 70px 48px;
-  background: #f7f3ec;
-}
-
-.center {
-  text-align: center;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 22px;
-  margin: 30px 0 40px;
-}
-
-.card {
-  min-height: 220px;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  color: white;
-  background:
-    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.05)),
-    url("https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=800&q=80");
-  background-size: cover;
-  background-position: center;
-}
-
-.card h3 {
-  font-family: Arial, sans-serif;
-  text-transform: uppercase;
-  font-size: 18px;
-  margin-bottom: 6px;
-}
-
-.card p {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-}
-
-.footer {
-  padding: 48px;
-  display: flex;
-  justify-content: space-between;
-  background: #1f1f1f;
-  color: white;
-}
-
-.footer h3 {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 12px;
-}
-
-.footer p {
-  font-family: Arial, sans-serif;
-}
-
-@media (max-width: 900px) {
-  .header {
-    padding: 24px;
-    height: auto;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .nav {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .hero {
-    padding: 60px 24px;
-  }
-
-  h1 {
-    font-size: 52px;
-  }
-
-  .icons,
-  .about,
-  .cards {
-    grid-template-columns: 1fr;
-  }
-
-  .footer {
-    flex-direction: column;
-    gap: 24px;
-  }
-
-  .univers {
+.univers {
   max-width: 850px;
   margin: 0 auto;
   padding: 80px 24px;
@@ -279,7 +19,19 @@ h1 {
   margin-bottom: 0;
   font-weight: 500;
 }
- .section-en-savoir-plus {
+
+/* Lien texte */
+.liaison-textuelle {
+  font-family: Arial, sans-serif;
+  color: #1f1f1f;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+/* Page En savoir plus sur moi */
+.section-en-savoir-plus {
   padding: 80px 10%;
   background-color: #f8f3ec;
 }
@@ -320,6 +72,40 @@ h1 {
   line-height: 1.8;
 }
 
+/* Version tablette */
+@media (max-width: 900px) {
+  .header {
+    padding: 24px;
+    height: auto;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 60px 24px;
+  }
+
+  h1 {
+    font-size: 52px;
+  }
+
+  .icons,
+  .about,
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
 /* Version téléphone */
 @media (max-width: 768px) {
   .section-en-savoir-plus {
@@ -346,5 +132,8 @@ h1 {
   .texte-en-savoir-plus {
     width: 100%;
   }
-}
 
+  .texte-en-savoir-plus h1 {
+    font-size: 2rem;
+  }
+}
