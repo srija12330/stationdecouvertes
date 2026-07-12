@@ -279,7 +279,7 @@ h1 {
   margin-bottom: 0;
   font-weight: 500;
 }
-  .section-en-savoir-plus {
+ .section-en-savoir-plus {
   padding: 80px 10%;
   background-color: #f8f3ec;
 }
@@ -293,24 +293,26 @@ h1 {
 }
 
 .photo-en-savoir-plus {
-  flex: 1;
+  flex: 0 0 280px;
+  display: flex;
+  justify-content: center;
 }
 
 .photo-en-savoir-plus img {
-  width: 100%;
-  max-width: 380px;
-  border-radius: 24px;
+  width: 280px;
+  height: 380px;
   object-fit: cover;
+  border-radius: 24px;
   display: block;
 }
 
 .texte-en-savoir-plus {
-  flex: 2;
+  flex: 1;
 }
 
-.texte-en-savoir-plus h2 {
+.texte-en-savoir-plus h1 {
   margin-bottom: 30px;
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 
 .texte-en-savoir-plus p {
@@ -320,12 +322,29 @@ h1 {
 
 /* Version téléphone */
 @media (max-width: 768px) {
+  .section-en-savoir-plus {
+    padding: 60px 8%;
+  }
+
   .contenu-en-savoir-plus {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .photo-en-savoir-plus {
+    flex: none;
+    width: 100%;
   }
 
   .photo-en-savoir-plus img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 280px;
+    height: 360px;
   }
+
+  .texte-en-savoir-plus {
+    width: 100%;
+  }
+}
 
