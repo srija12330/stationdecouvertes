@@ -1,8 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Georgia", serif;
+  background: #f7f3ec;
+  color: #1f1f1f;
+}
+
+/* Header */
+
+.header {
+  min-height: 80px;
+  padding: 0 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f7f3ec;
+  border-bottom: 1px solid #e4ded3;
+}
+
+.logo {
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.nav a {
+  color: #1f1f1f;
+  text-decoration: none;
+}
+
+/* Hero */
+
+.hero {
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  padding: 80px 48px;
+  background:
+    linear-gradient(to right, rgba(247,243,236,0.98) 0%, rgba(247,243,236,0.85) 38%, rgba(247,243,236,0.15) 70%),
+    url("https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1800&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-text {
+  max-width: 620px;
+}
+
+.label {
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+h1 {
+  font-size: 82px;
+  line-height: 0.95;
+  font-weight: 400;
+  margin-bottom: 28px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+.intro {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 520px;
+  margin-bottom: 32px;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Boutons */
+
+.btn {
+  display: inline-block;
+  padding: 16px 28px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn.dark {
+  background: #1f1f1f;
+  color: white;
+}
+
+.btn.light {
+  background: #f7f3ec;
+  color: #1f1f1f;
+  border: 1px solid #1f1f1f;
+}
+
+/* Section icônes / collaborations */
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  padding: 48px;
+  background: #fffaf3;
+  text-align: center;
+  border-bottom: 1px solid #e4ded3;
+}
+
+.icons h3 {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.icons p {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Section about accueil */
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 48px;
+  padding: 80px 48px;
+  align-items: center;
+}
+
+.about h2 {
+  font-size: 54px;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.about p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.about-image {
+  min-height: 360px;
+  background: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Liens texte */
+
+.liaison-textuelle,
+.text-link {
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  color: #1f1f1f;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.liaison-textuelle:hover,
+.text-link:hover {
+  text-decoration: underline;
+}
+
+/* Destinations */
+
+.destinations {
+  padding: 70px 48px;
+  background: #f7f3ec;
+}
+
+.center {
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin: 30px 0 40px;
+}
+
+.card {
+  min-height: 220px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color: white;
+  background:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.05)),
+    url("https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=800&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.card h3 {
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.card p {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* Footer */
+
+.footer {
+  padding: 48px;
+  display: flex;
+  justify-content: space-between;
+  background: #1f1f1f;
+  color: white;
+}
+
+.footer h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.footer p {
+  font-family: Arial, sans-serif;
+}
+
+/* Page Découvrir mon univers */
+
 .univers {
   max-width: 850px;
   margin: 0 auto;
   padding: 80px 24px;
   line-height: 1.8;
+}
+
+.univers h1 {
+  text-align: center;
+  font-size: 54px;
+  line-height: 1.1;
+  margin-bottom: 40px;
 }
 
 .univers h2 {
@@ -11,29 +281,25 @@
 }
 
 .univers p {
+  font-family: Arial, sans-serif;
   margin-bottom: 22px;
   font-size: 1.05rem;
 }
 
 .univers p:last-child {
   margin-bottom: 0;
-  font-weight: 500;
 }
 
-/* Lien texte */
-.liaison-textuelle {
-  font-family: Arial, sans-serif;
-  color: #1f1f1f;
-  text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 1px;
-  text-decoration: none;
+.page-univers {
+  min-height: 70vh;
 }
 
 /* Page En savoir plus sur moi */
+
 .section-en-savoir-plus {
   padding: 80px 10%;
   background-color: #f8f3ec;
+  min-height: 100vh;
 }
 
 .contenu-en-savoir-plus {
@@ -65,14 +331,18 @@
 .texte-en-savoir-plus h1 {
   margin-bottom: 30px;
   font-size: 2.4rem;
+  line-height: 1.1;
+  text-transform: none;
 }
 
 .texte-en-savoir-plus p {
+  font-family: Arial, sans-serif;
   margin-bottom: 18px;
   line-height: 1.8;
 }
 
 /* Version tablette */
+
 @media (max-width: 900px) {
   .header {
     padding: 24px;
@@ -107,7 +377,57 @@
 }
 
 /* Version téléphone */
+
 @media (max-width: 768px) {
+  .header {
+    align-items: flex-start;
+  }
+
+  .nav {
+    justify-content: flex-start;
+    gap: 14px;
+  }
+
+  .hero {
+    min-height: 560px;
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+
+  .intro {
+    font-size: 16px;
+  }
+
+  .icons {
+    padding: 40px 24px;
+  }
+
+  .about {
+    padding: 60px 24px;
+  }
+
+  .about h2 {
+    font-size: 40px;
+  }
+
+  .destinations {
+    padding: 60px 24px;
+  }
+
+  .footer {
+    padding: 40px 24px;
+  }
+
+  .univers {
+    padding: 60px 24px;
+  }
+
+  .univers h1 {
+    font-size: 40px;
+  }
+
   .section-en-savoir-plus {
     padding: 60px 8%;
   }
