@@ -3,122 +3,531 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Station Découvertes</title>
+
+  <meta
+    name="description"
+    content="Station Découvertes, studio créatif spécialisé dans le voyage, l’hôtellerie et le lifestyle."
+  />
+
+  <title>Station Découvertes | Studio créatif voyage</title>
+
+  <!-- Polices Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header class="header">
-    <div class="logo">STATION<br>DÉCOUVERTES</div>
 
-    <nav class="nav">
-      <a href="index.html">Accueil</a>
+  <!-- En-tête -->
+
+  <header class="header">
+    <a href="index.html" class="logo" aria-label="Retour à l’accueil">
+      <span>Station</span>
+      <span>Découvertes</span>
+    </a>
+
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="index.html" class="active">Accueil</a>
       <a href="univers.html">À propos</a>
-      <a href="#">Services</a>
-      <a href="#">Portfolio</a>
-      <a href="#">Carnets de voyage</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#carnets">Carnets de voyage</a>
       <a href="#collaborations">Collaborations</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-text">
-        <p class="label">Studio créatif voyage, hôtellerie & lifestyle</p>
-        <h1>Station Découvertes</h1>
 
-        <p class="intro">
+    <!-- Section principale -->
+
+    <section class="hero">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow">
+          Studio créatif · Voyage · Hôtellerie · Lifestyle
+        </p>
+
+        <h1>
+          Découvrir<br />
+          autrement
+        </h1>
+
+        <p class="editorial-text hero-editorial">
+          Des lieux, des histoires et des expériences à faire rayonner.
+        </p>
+
+        <p class="hero-description">
           J’aide les lieux, expériences et marques à raconter leur univers
-          à travers du contenu visuel, éditorial et social media inspiré du voyage.
+          à travers du contenu visuel, éditorial et social media inspiré
+          du voyage.
         </p>
 
         <div class="buttons">
-          <a href="univers.html" class="btn dark">Découvrir mon univers</a>
-          <a href="#collaborations" class="btn light">Voir mes collaborations</a>
+          <a href="univers.html" class="btn btn-primary">
+            Découvrir mon univers
+          </a>
+
+          <a href="#collaborations" class="btn btn-secondary">
+            Voir mes collaborations
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-route" aria-hidden="true">
+        <span class="route-point"></span>
+        <span class="route-line"></span>
+        <span class="route-plane">✦</span>
+      </div>
+
+      <p class="hero-signature">Station Découvertes</p>
+    </section>
+
+    <!-- Introduction -->
+
+    <section class="intro-section">
+      <div class="intro-decoration" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <p class="eyebrow center">Mon regard</p>
+
+      <h2 class="section-title center">
+        Faire ressentir un lieu<br />
+        avant même d’y être
+      </h2>
+
+      <p class="editorial-text intro-editorial">
+        Observer les détails, comprendre une atmosphère et raconter
+        l’expérience avec sensibilité.
+      </p>
+
+      <p class="intro-section-text">
+        Station Découvertes est un univers consacré aux voyages, aux lieux
+        inspirants et aux expériences qui méritent d’être racontées autrement.
+        À travers la photographie, la vidéo et le storytelling, je transforme
+        mes découvertes en contenus immersifs et authentiques.
+      </p>
+    </section>
+
+    <!-- Portes d’entrée -->
+
+    <section class="univers-grid" id="portfolio">
+
+      <article class="univers-card univers-card-photo univers-card-discover">
+        <div class="univers-card-content">
+          <p class="handwritten">Explorer</p>
+          <h2>Découvrir</h2>
+
+          <p>
+            Carnets de voyage, itinéraires, adresses et expériences
+            sélectionnées avec curiosité.
+          </p>
+
+          <a href="#carnets" class="text-link light-link">
+            Explorer les carnets
+          </a>
+        </div>
+      </article>
+
+      <article class="univers-card univers-card-coral">
+        <div class="sun-symbol" aria-hidden="true">
+          <span></span>
+        </div>
+
+        <div class="univers-card-content">
+          <p class="handwritten">Imaginer</p>
+          <h2>Créer</h2>
+
+          <p>
+            Donner une identité visuelle et émotionnelle à un lieu
+            grâce à du contenu inspirant.
+          </p>
+
+          <a href="#services" class="text-link">
+            Découvrir le studio
+          </a>
+        </div>
+      </article>
+
+      <article class="univers-card univers-card-split">
+        <div class="split-image"></div>
+
+        <div class="split-content">
+          <p class="handwritten">Ensemble</p>
+          <h2>Collaborer</h2>
+
+          <p>
+            Imaginer des contenus authentiques pour les marques,
+            hébergements et expériences touristiques.
+          </p>
+
+          <a href="#collaborations" class="text-link">
+            Voir les collaborations
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <!-- Mon univers -->
+
+    <section class="about">
+      <div class="about-image-wrapper">
+        <div class="about-image"></div>
+
+        <div class="about-image-label">
+          <span class="location-icon">●</span>
+          Un regard sensible sur le monde
+        </div>
+      </div>
+
+      <div class="about-text">
+        <p class="eyebrow">Mon univers</p>
+
+        <h2 class="section-title">
+          Voyager.<br />
+          Raconter.<br />
+          Inspirer.
+        </h2>
+
+        <p class="editorial-text">
+          Je ne cherche pas seulement à montrer un lieu, mais à transmettre
+          ce qu’il fait ressentir.
+        </p>
+
+        <p>
+          Au fil de mes voyages, j’ai développé une manière personnelle
+          d’observer les destinations : leurs détails, leur lumière,
+          leur atmosphère et les histoires qui les rendent uniques.
+        </p>
+
+        <p>
+          Aujourd’hui, cet univers évolue vers un studio créatif destiné
+          aux lieux, hébergements et marques qui souhaitent mieux raconter
+          leur expérience.
+        </p>
+
+        <a href="en-savoir-plus.html" class="text-link">
+          En savoir plus sur moi
+        </a>
+      </div>
+    </section>
+
+    <!-- Services -->
+
+    <section class="services" id="services">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Studio créatif</p>
+
+          <h2 class="section-title">
+            Faire rayonner<br />
+            l’expérience d’un lieu
+          </h2>
+        </div>
+
+        <p class="section-heading-text">
+          Une approche visuelle et éditoriale pensée pour mettre en valeur
+          l’identité, l’ambiance et la singularité de chaque expérience.
+        </p>
+      </div>
+
+      <div class="services-grid">
+
+        <article class="service-card">
+          <span class="service-number">01</span>
+
+          <h3>Direction créative</h3>
+
+          <p>
+            Définition de l’univers, de l’ambiance et du regard visuel
+            adapté à votre lieu ou à votre marque.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <span class="service-number">02</span>
+
+          <h3>Création de contenu</h3>
+
+          <p>
+            Photographies, vidéos, reels, stories et contenus immersifs
+            pensés pour les réseaux sociaux.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <span class="service-number">03</span>
+
+          <h3>Storytelling</h3>
+
+          <p>
+            Des textes et des récits capables de transmettre l’atmosphère,
+            les valeurs et l’expérience proposées.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <span class="service-number">04</span>
+
+          <h3>Visibilité de l’expérience</h3>
+
+          <p>
+            Réflexion sur la manière de présenter le lieu et d’améliorer
+            la compréhension de son expérience en ligne.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Carnets de voyage -->
+
+    <section class="destinations" id="carnets">
+      <div class="destinations-heading">
+        <div>
+          <p class="eyebrow">Carnets de voyage</p>
+
+          <h2 class="section-title">
+            Destinations<br />
+            à la une
+          </h2>
+        </div>
+
+        <p class="editorial-text">
+          Mes itinéraires, mes impressions et les lieux qui ont marqué
+          mes voyages.
+        </p>
+      </div>
+
+      <div class="destination-layout">
+
+        <article class="destination-feature destination-colombia">
+          <div class="destination-content">
+            <p class="handwritten light-handwritten">
+              Carnet de voyage
+            </p>
+
+            <h3>Colombie</h3>
+
+            <p>
+              Medellín · Salento · Côte Caraïbe · Carthagène
+            </p>
+
+            <a href="#" class="text-link light-link">
+              Découvrir le carnet
+            </a>
+          </div>
+        </article>
+
+        <div class="destination-small-grid">
+
+          <article class="destination-small destination-mexico">
+            <div>
+              <p class="destination-category">Escapade</p>
+              <h3>Mexique</h3>
+            </div>
+          </article>
+
+          <article class="destination-small destination-quebec">
+            <div>
+              <p class="destination-category">À proximité</p>
+              <h3>Québec</h3>
+            </div>
+          </article>
+
+          <article class="destination-text-card">
+            <span class="location-marker">●</span>
+
+            <p class="handwritten">Prochaine escale</p>
+
+            <h3>
+              Des lieux qui racontent une histoire.
+            </h3>
+
+            <a href="#" class="text-link">
+              Voir tous les carnets
+            </a>
+          </article>
+
         </div>
       </div>
     </section>
 
-    <section id="collaborations" class="icons">
-      <div>
-        <h3>Création de contenu</h3>
-        <p>Photos, vidéos, reels et stories immersives.</p>
-      </div>
+    <!-- Collaborations -->
 
-      <div>
-        <h3>Storytelling</h3>
-        <p>Récits de voyage, articles et textes inspirants.</p>
-      </div>
+    <section class="collaborations" id="collaborations">
+      <div class="collaboration-photo"></div>
 
-      <div>
-        <h3>Collaborations</h3>
-        <p>Partenariats avec marques de voyage et lifestyle.</p>
-      </div>
+      <div class="collaboration-content">
+        <p class="eyebrow">Collaborations</p>
 
-      <div>
-        <h3>Voyages & inspiration</h3>
-        <p>Carnets de voyage, adresses et bons plans.</p>
-      </div>
-    </section>
+        <h2 class="section-title">
+          Créons une histoire<br />
+          qui donne envie d’être vécue
+        </h2>
 
-    <section class="about">
-      <div class="about-text">
-        <p class="label">Mon univers</p>
-        <h2>Voyager.<br>Raconter.<br>Inspirer.</h2>
-
-        <p>
-          Du bout du monde aux adresses cachées, je capture des instants vrais
-          et je les transforme en histoires qui inspirent.
+        <p class="editorial-text">
+          Pour les hébergements, destinations, expériences et marques
+          lifestyle qui souhaitent présenter leur univers avec authenticité.
         </p>
 
-        <a href="en-savoir-plus.html" class="liaison-textuelle">En savoir plus sur moi +</a>
-      </div>
+        <p>
+          Chaque collaboration est pensée pour respecter l’identité du lieu
+          et mettre en lumière ce qui le rend réellement différent :
+          l’accueil, l’atmosphère, les détails et les émotions qu’il procure.
+        </p>
 
-      <div class="about-image"></div>
+        <a href="mailto:hello@stationdecouvertes.com" class="btn btn-primary">
+          Imaginer une collaboration
+        </a>
+      </div>
     </section>
 
-    <section class="destinations">
-      <p class="label center">Destinations à la une</p>
+    <!-- Coups de cœur -->
 
-      <div class="cards">
-        <article class="card">
-          <h3>Marrakech</h3>
-          <p>Carnet de voyage</p>
+    <section class="favorites">
+      <div class="favorites-heading">
+        <p class="handwritten">Mes adresses</p>
+
+        <h2 class="section-title">
+          Coups de cœur
+        </h2>
+
+        <span class="heart-symbol">♡</span>
+      </div>
+
+      <div class="favorites-grid">
+
+        <article class="favorite-card">
+          <div class="favorite-image favorite-image-one"></div>
+
+          <div class="favorite-content">
+            <p class="favorite-location">Québec</p>
+            <h3>Une expérience au cœur des vignobles</h3>
+            <p>Découvrir · Goûter · Rencontrer</p>
+          </div>
         </article>
 
-        <article class="card">
-          <h3>Côte Amalfitaine</h3>
-          <p>Guide & bonnes adresses</p>
+        <article class="favorite-card">
+          <div class="favorite-image favorite-image-two"></div>
+
+          <div class="favorite-content">
+            <p class="favorite-location">Colombie</p>
+            <h3>Une adresse colorée et pleine de caractère</h3>
+            <p>Dormir · Explorer · Ressentir</p>
+          </div>
         </article>
 
-        <article class="card">
-          <h3>Cappadoce</h3>
-          <p>Expériences & conseils</p>
+        <article class="favorite-card">
+          <div class="favorite-image favorite-image-three"></div>
+
+          <div class="favorite-content">
+            <p class="favorite-location">Mexique</p>
+            <h3>Une ville où chaque façade raconte une histoire</h3>
+            <p>Marcher · Observer · Photographier</p>
+          </div>
         </article>
 
-        <article class="card">
-          <h3>Bali</h3>
-          <p>Lieux & adresses</p>
-        </article>
+      </div>
+    </section>
+
+    <!-- Instagram -->
+
+    <section class="instagram-section">
+      <div class="instagram-heading">
+        <p class="eyebrow">Suivre le voyage</p>
+
+        <h2 class="section-title">
+          @station_decouvertes
+        </h2>
+
+        <p class="editorial-text">
+          Voyages, lieux inspirants et évolution du studio créatif.
+        </p>
+      </div>
+
+      <div class="instagram-grid">
+        <div class="instagram-item instagram-one"></div>
+        <div class="instagram-item instagram-two"></div>
+        <div class="instagram-item instagram-coral">
+          <span class="handwritten">Découvrir autrement</span>
+        </div>
+        <div class="instagram-item instagram-three"></div>
+        <div class="instagram-item instagram-four"></div>
+        <div class="instagram-item instagram-cream">
+          <span>Station<br />Découvertes</span>
+        </div>
       </div>
 
       <div class="center">
-        <a href="#" class="btn dark">Voir tous les articles</a>
+        <a
+          href="https://www.instagram.com/station_decouvertes/"
+          class="btn btn-secondary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Voir Instagram
+        </a>
       </div>
     </section>
+
   </main>
 
+  <!-- Pied de page -->
+
   <footer id="contact" class="footer">
-    <div>
-      <h3>Station Découvertes</h3>
-      <p>Studio créatif voyage, hôtellerie & lifestyle.</p>
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo">
+        Station<br />
+        Découvertes
+      </a>
+
+      <p>
+        Studio créatif spécialisé dans le voyage,
+        l’hôtellerie et le lifestyle.
+      </p>
     </div>
 
-    <div>
+    <div class="footer-column">
+      <h3>Explorer</h3>
+
+      <a href="univers.html">À propos</a>
+      <a href="#services">Services</a>
+      <a href="#carnets">Carnets de voyage</a>
+      <a href="#collaborations">Collaborations</a>
+    </div>
+
+    <div class="footer-column">
       <h3>Contact</h3>
-      <p>hello@stationdecouvertes.com</p>
+
+      <a href="mailto:hello@stationdecouvertes.com">
+        hello@stationdecouvertes.com
+      </a>
+
+      <a
+        href="https://www.instagram.com/station_decouvertes/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Instagram
+      </a>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Station Découvertes</p>
     </div>
   </footer>
+
 </body>
 </html>
