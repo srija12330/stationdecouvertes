@@ -3,84 +3,154 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Découvrir mon univers - Station Découvertes</title>
+
+  <meta
+    name="description"
+    content="Découvrez l’univers de Station Découvertes, entre voyages, belles adresses, hôtellerie et création de contenu."
+  />
+
+  <title>Découvrir mon univers | Station Découvertes</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header class="header">
-    <div class="logo">STATION<br>DÉCOUVERTES</div>
 
-    <nav class="nav">
+  <header class="header">
+    <a href="index.html" class="logo" aria-label="Retour à l’accueil">
+      <span>Station</span>
+      <span>Découvertes</span>
+    </a>
+
+    <nav class="nav" aria-label="Navigation principale">
       <a href="index.html">Accueil</a>
-      <a href="univers.html">À propos</a>
-      <a href="#">Services</a>
-      <a href="#">Portfolio</a>
-      <a href="#">Carnets de voyage</a>
+      <a href="univers.html" class="active">À propos</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#portfolio">Portfolio</a>
+      <a href="index.html#carnets">Carnets de voyage</a>
       <a href="index.html#collaborations">Collaborations</a>
-      <a href="#">Contact</a>
+      <a href="index.html#contact">Contact</a>
     </nav>
   </header>
 
-  <main>
-    <section class="univers page-univers">
-      <p class="label center">Mon univers</p>
+  <main class="page-univers">
+
+    <section class="univers">
+
+      <p class="eyebrow center">Mon univers</p>
+
       <h1>Découvrir mon univers</h1>
 
+      <h2>
+        Des voyages, des lieux et des expériences racontés autrement.
+      </h2>
+
       <p>
-        Station Découvertes est née d’une envie simple : garder une trace des lieux qui marquent,
-        des instants qui inspirent et des expériences qui donnent envie de repartir.
+        Station Découvertes est née d’une envie simple : garder une trace
+        des lieux qui marquent, des instants qui inspirent et des expériences
+        qui donnent envie de repartir.
       </p>
 
       <p>
-        À travers mes voyages, mes escapades au Québec, mes coups de cœur hôteliers, mes belles
-        adresses et mon regard sur l’art de vivre autour du monde, je partage un univers fait de
-        paysages, d’ambiances, de moments vrais et d’inspirations visuelles.
+        À travers mes voyages, mes escapades au Québec, mes coups de cœur
+        hôteliers, mes belles adresses et mon regard sur l’art de vivre autour
+        du monde, je partage un univers fait de paysages, d’ambiances,
+        de moments vrais et d’inspirations visuelles.
       </p>
 
       <p>
-        Ici, le voyage ne se résume pas seulement à une destination. C’est une lumière, une rencontre,
-        une atmosphère, une émotion. C’est cette sensation particulière qu’un lieu peut laisser en nous,
+        Ici, le voyage ne se résume pas seulement à une destination.
+        C’est une lumière, une rencontre, une atmosphère, une émotion.
+        C’est cette sensation particulière qu’un lieu peut laisser en nous,
         parfois longtemps après l’avoir quitté.
       </p>
 
       <p>
-        Au fil des années, j’ai exploré plusieurs coins du monde — de l’Amérique latine à l’Océanie,
-        en passant par l’Afrique, l’Asie, l’Europe et le Canada — avec toujours cette même curiosité :
-        découvrir autrement, observer les détails, comprendre l’âme d’un lieu et transmettre ce que
-        j’ai ressenti.
+        Au fil des années, j’ai exploré plusieurs coins du monde —
+        de l’Amérique latine à l’Océanie, en passant par l’Afrique, l’Asie,
+        l’Europe et le Canada — avec toujours cette même curiosité :
+        découvrir autrement, observer les détails, comprendre l’âme d’un lieu
+        et transmettre ce que j’ai ressenti.
       </p>
 
       <p>
-        Aujourd’hui, Station Découvertes évolue vers un espace plus créatif, à la croisée du voyage,
-        de l’hôtellerie et de l’art de vivre. Un lieu où je partage mes carnets de voyage, mes inspirations,
-        mes coups de cœur, mais aussi mon regard sur les marques, les lieux et les expériences qui savent
-        créer une vraie émotion.
+        Aujourd’hui, Station Découvertes évolue vers un espace plus créatif,
+        à la croisée du voyage, de l’hôtellerie et de l’art de vivre.
+        Un lieu où je partage mes carnets de voyage, mes inspirations,
+        mes coups de cœur, mais aussi mon regard sur les marques, les lieux
+        et les expériences qui savent créer une vraie émotion.
       </p>
 
       <p>
-        Que tu sois ici pour t’inspirer, préparer une escapade, découvrir de belles adresses ou simplement
-        entrer dans mon univers, bienvenue à la station.
+        Que tu sois ici pour t’inspirer, préparer une escapade, découvrir
+        de belles adresses ou simplement entrer dans mon univers,
+        bienvenue à la station.
       </p>
 
       <p>
         Ici, on prend le temps de regarder, de ressentir et de raconter.
       </p>
 
-      <a href="index.html" class="liaison-textuelle">← Retour à l’accueil</a>
+      <a href="index.html" class="text-link">
+        Retour à l’accueil
+      </a>
+
     </section>
+
   </main>
 
-  <footer class="footer">
-    <div>
-      <h3>Station Découvertes</h3>
-      <p>Studio créatif voyage, hôtellerie & lifestyle.</p>
+  <footer id="contact" class="footer">
+
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo">
+        Station<br />
+        Découvertes
+      </a>
+
+      <p>
+        Studio créatif spécialisé dans le voyage,
+        l’hôtellerie et le lifestyle.
+      </p>
     </div>
 
-    <div>
-      <h3>Contact</h3>
-      <p>hello@stationdecouvertes.com</p>
+    <div class="footer-column">
+      <h3>Explorer</h3>
+
+      <a href="univers.html">À propos</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#carnets">Carnets de voyage</a>
+      <a href="index.html#collaborations">Collaborations</a>
     </div>
+
+    <div class="footer-column">
+      <h3>Contact</h3>
+
+      <a href="mailto:hello@stationdecouvertes.com">
+        hello@stationdecouvertes.com
+      </a>
+
+      <a
+        href="https://www.instagram.com/station_decouvertes/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Instagram
+      </a>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Station Découvertes</p>
+    </div>
+
   </footer>
+
 </body>
 </html>
