@@ -175,16 +175,44 @@ p {
   border-bottom: 1px solid var(--border);
 }
 
-.logo {
-  display: flex;
-  flex-direction: column;
+.logo,
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
 
   color: var(--brown);
+  text-decoration: none;
+}
+
+.brand-logo {
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+
+  display: block;
+  object-fit: contain;
+
+  /*
+  Le logo d'origine est noir et blanc :
+  - le blanc se fond dans le fond crème ;
+  - le noir devient visuellement plus doux et plus chaud.
+  */
+  mix-blend-mode: multiply;
+  opacity: 0.88;
+}
+
+.brand-name {
+  display: block;
+
+  color: var(--brown);
+  font-family: var(--title-font);
   font-size: 17px;
   font-weight: 700;
   letter-spacing: 3px;
   line-height: 1.05;
-  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .nav {
@@ -1442,8 +1470,19 @@ p {
     padding-bottom: 24px;
   }
 
-  .logo {
-    font-size: 16px;
+  .logo,
+  .brand {
+    gap: 9px;
+  }
+
+  .brand-logo {
+    width: 54px;
+    height: 54px;
+  }
+
+  .brand-name {
+    font-size: 14px;
+    letter-spacing: 2.4px;
   }
 
   .nav {
@@ -1635,6 +1674,16 @@ p {
 -------------------------------------------------- */
 
 @media (max-width: 400px) {
+  .brand-logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .brand-name {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
   .hero h1 {
     font-size: 50px;
   }
