@@ -2,6 +2,19 @@
    POLICE LOVELO
 -------------------------------------------------- */
 
+/*
+Ajoute les fichiers Lovelo dans un dossier appelé "fonts".
+
+Exemple :
+
+fonts/
+  Lovelo-Black.woff2
+  Lovelo-LineBold.woff2
+
+Si tu n’as pas encore le fichier Lovelo, le site utilisera
+Poppins temporairement.
+*/
+
 @font-face {
   font-family: "Lovelo";
   src: url("fonts/Lovelo-Black.woff2") format("woff2");
