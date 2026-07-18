@@ -242,7 +242,7 @@ p {
       rgba(247, 243, 236, 0.48) 58%,
       rgba(247, 243, 236, 0.05) 100%
     ),
-    url("https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=2000&q=90");
+    url("images/tongariro.png");
 
   background-position: center;
   background-size: cover;
@@ -539,7 +539,7 @@ p {
       rgba(43, 33, 29, 0.78),
       rgba(43, 33, 29, 0.05)
     ),
-    url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=85");
+    url("images/maori-statue.jpg");
 
   background-position: center;
   background-size: cover;
@@ -601,7 +601,7 @@ p {
 .split-image {
   min-height: 260px;
 
-  background-image: url("https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=85");
+  background-image: url("images/maya-bay.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -633,7 +633,7 @@ p {
 .about-image {
   min-height: 630px;
 
-  background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=90");
+  background-image: url("images/traverser.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -800,14 +800,14 @@ p {
   background-size: cover;
 }
 
-.destination-colombia {
+.destination-new-zealand {
   background-image:
     linear-gradient(
       to top,
       rgba(43, 33, 29, 0.82),
       rgba(43, 33, 29, 0.05)
     ),
-    url("https://images.unsplash.com/photo-1599946347371-68eb71b16afc?auto=format&fit=crop&w=1400&q=90");
+    url("images/tongariro.png");
 }
 
 .destination-content h3 {
@@ -850,30 +850,41 @@ p {
   font-style: italic;
 }
 
-.destination-mexico {
+.destination-australia {
   background-image:
     linear-gradient(
       to top,
       rgba(43, 33, 29, 0.75),
       rgba(43, 33, 29, 0.05)
     ),
-    url("https://images.unsplash.com/photo-1512813195386-6cf811ad3542?auto=format&fit=crop&w=900&q=85");
+    url("images/opera-sydney2.jpg");
 }
 
-.destination-quebec {
+.destination-asia {
   background-image:
     linear-gradient(
       to top,
       rgba(43, 33, 29, 0.75),
       rgba(43, 33, 29, 0.05)
     ),
-    url("https://images.unsplash.com/photo-1519178614-68673b201f36?auto=format&fit=crop&w=900&q=85");
+    url("images/angkor-cambodia.jpg");
 }
+
+.destination-europe {
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(43, 33, 29, 0.75),
+      rgba(43, 33, 29, 0.05)
+    ),
+    url("images/croix-occitane.jpg");
+}
+
 
 .destination-text-card {
   position: relative;
-  grid-column: span 2;
-  min-height: 316px;
+  grid-column: auto;
+  min-height: 310px;
   padding: 45px;
 
   display: flex;
@@ -1332,7 +1343,7 @@ p {
         rgba(247, 243, 236, 0.88) 60%,
         rgba(247, 243, 236, 0.28) 100%
       ),
-      url("https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1600&q=85");
+      url("images/tongariro.png");
   }
 
   .hero-route {
@@ -1457,7 +1468,7 @@ p {
         rgba(247, 243, 236, 0.96) 38%,
         rgba(247, 243, 236, 0.25) 100%
       ),
-      url("https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1000&q=85");
+      url("images/tongariro.png");
 
     background-position: 62% center;
   }
